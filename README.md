@@ -43,6 +43,8 @@ Event Bridge has the functionality to trigger based on a cron schedule. That's w
 - I've divided the day into 3 5-hour windows `9 am to 12 pm`, `1 pm to 6 pm` and finally `7 pm to 11 pm`.
 - When the lambda is triggered in the last window, it resets the Eventbridge rule to trigger the next day at 8 am.
 
+PS. The bot tweets in my timezone (IST)
+
 
 ## How to Run?
 This code won't be enough to create a similar bot. Some setup of AWS features, as well as registering for a Twitter developer account would be required to run it properly.

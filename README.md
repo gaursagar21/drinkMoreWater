@@ -5,7 +5,9 @@ Code for twitter bot [@_drink_more](https://twitter.com/_drink_more)
 
 
 I created this bot after failing multiple times to get used to water reminder apps. The very fact they are periodic prevents them from being habit-forming.
-There are several reminders on my phone for sleep, exercise, drinking water, and whatnot. I've learned to ignore all of them. I anticipate the ringing of my phone. More than that, to even my surprise I go long periods without looking into my phone.
+
+
+There are several reminders on my phone for sleep, exercise, drinking water, and whatnot. I've learned to ignore all of them. I anticipate the buzzing of my phone and then not do anything about the reminder. More than that, to even my surprise I go long periods without looking into my phone.
 
 A more random reminder should be more difficult to learn to ignore (I hope).
 

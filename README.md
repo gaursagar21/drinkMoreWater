@@ -19,8 +19,9 @@ e.g. `"Only {water_left} more glasses before you go to sleep!"`
 
 The glasses of water to drink are linearly calculated based on the following conditional function:
 ```python
-if hour_of_the_day <= 8:
-  water_to_drink = hour_of_the_day - 8 #to simulate an 8am start of the day
+if hour_of_the_day >= 8:
+  water_consumed = hour_of_the_day - 8 #to simulate an 8am start of the day
+  water_left = 15 - water_consumed
 ```
 
 The waking hours are between 8 am to 11 pm. With one glass of water every hour that's 15 glasses (3.7 liters or a gallon) of water.

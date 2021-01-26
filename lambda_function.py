@@ -71,7 +71,7 @@ class DrinkMore:
 
         minute = random.randint(0, 59)
 
-        schedule_expression = 'cron({minute} 3 * * ? *)'.format(minute=minute)
+        schedule_expression = 'cron({minute} 2 * * ? *)'.format(minute=minute)
 
         if self.current_hour + self.hour_window <= self.cutoff_hour:
             hour = self.getNextScheduledHour()

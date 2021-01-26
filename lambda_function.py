@@ -32,7 +32,7 @@ class DrinkMore:
     posting_window_start = [8, 13, 18]
     # Rest after cutoff_hour
     cutoff_hour = 22
-    hour_window = 5
+    hour_window = 4
     current_time = datetime.datetime.now(pytz.timezone(timezone))
     current_hour = current_time.hour
 
@@ -58,7 +58,7 @@ class DrinkMore:
     def getNextScheduledHour(self):
         next_hour = 7
         for i in self.posting_window_start:
-            if i - self.current_hour > 0:
+            if i - self.current_hour >= 0:
                 next_hour = i
                 break
 

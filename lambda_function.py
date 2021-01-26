@@ -56,13 +56,14 @@ class DrinkMore:
         pass
 
     def getNextScheduledHour(self):
-        next_hour = 8
+        next_hour = 7
         for i in self.posting_window_start:
             if i - self.current_hour > 0:
                 next_hour = i
                 break
 
         next_scheduled_hour = random.randint(0, 5) + next_hour
+        print("Next scheduled hour before GMT Correction:" + str(next_scheduled_hour))
         return next_scheduled_hour - self.gmt_correction
 
     def updateEventBridgeRule(self):
@@ -177,13 +178,16 @@ def lambda_handler(event, context):
     newSchedule = drink_more.updateEventBridgeRule()
 
     if not drink_more.canTweet():
+        msg = "Not Tweeting. Will try next time." + newSchedule
+        print(msg)
         return {
             'statusCode': 200,
-            'body': json.dumps("Not Tweeting. Will try next time." + newSchedule)
+            'body': json.dumps(msg)
         }
 
     tweetText = drink_more.generateTweetText()
     drink_more.postToTwitter(tweetText)
+    print("Ending. " + tweetText + newSchedule)
     return {
         'statusCode': 200,
         'body': json.dumps(tweetText + newSchedule)

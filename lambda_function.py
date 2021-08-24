@@ -150,39 +150,39 @@ class DrinkMore:
             water_consumed=self.water_consumed,
         )
         waterRelatedText.append(message)
-        
+
         # 8
         message = "Thousands have lived without love not one without water 🪴"
         waterRelatedText.append(message)
-        
+
         # 9
         message = "Everyday I'm guzzling 😎."
         waterRelatedText.append(message)
-        
+
         # 10
         message = "psst. how's your water drinking going? 🐙"
         waterRelatedText.append(message)
-        
+
         # 11
         message = "No you aren't hungry you are dehydrated 🦆! Drink {water_left} more glasses!".format(
             water_left=self.water_left
         )
         waterRelatedText.append(message)
-        
+
         # 12
         message = "I look this good because I drink water. 🐧"
         waterRelatedText.append(message)
-        
+
         # 13
         message = "Stressed 😓? Take a shot of water. 🐶"
         waterRelatedText.append(message)
-            
+
         # 14
         message = "1 minute until this event: Drink glass # {water_left} of water. 🙆🏻".format(
             water_left=self.water_left
         )
         waterRelatedText.append(message)
-        
+
         # 15
         message = "If you drink a gallon of water everday, you won't have time for other people's drama because you'll be too busy peeing. 👆🏻"
         waterRelatedText.append(message)

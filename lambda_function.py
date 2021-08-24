@@ -101,7 +101,7 @@ class DrinkMore:
         waterRelatedText = []
 
         # 1
-        message = "It's {printable_time}, you should have drank {water_consumed}"\
+        message = "It's {printable_time}  🕰, you should have drank {water_consumed}"\
             " glasses of water so far.".format(
                 printable_time=self.printable_time,
                 water_consumed=self.water_consumed
@@ -110,14 +110,14 @@ class DrinkMore:
 
         # 2
         message = "If you are at less than {water_consumed} glasses at"\
-            " {printable_hour} you are dehydrated.".format(
+            " {printable_hour} you are dehydrated. 🥤".format(
                 water_consumed=self.water_consumed,
                 printable_hour=self.printable_hour
             )
         waterRelatedText.append(message)
 
         # 3
-        message = "Your ancestors were fish and you can't drink {water_consumed} "\
+        message = "Your ancestors were fish 🐠 and you can't drink {water_consumed} "\
             "glasses?"\
             """
             """\
@@ -127,13 +127,13 @@ class DrinkMore:
         waterRelatedText.append(message)
 
         # 4
-        message = "Only {water_left} more glasses before you go to sleep!".format(
+        message = "Only {water_left} more glasses before you go to sleep! 💤".format(
             water_left=self.water_left
         )
         waterRelatedText.append(message)
 
         # 5
-        message = "My skin thanks me for drinking {water_consumed} glasses.".format(
+        message = "My skin thanks me for drinking {water_consumed} glasses 💁🏻.".format(
             water_consumed=self.water_consumed
         )
         waterRelatedText.append(message)
@@ -146,9 +146,45 @@ class DrinkMore:
         waterRelatedText.append(message)
 
         # 7
-        message = "How many glasses today? {water_consumed}? Chug more!".format(
+        message = "How many glasses today 🤨? {water_consumed}? Chug more!".format(
             water_consumed=self.water_consumed,
         )
+        waterRelatedText.append(message)
+        
+        # 8
+        message = "Thousands have lived without love not one without water 🪴"
+        waterRelatedText.append(message)
+        
+        # 9
+        message = "Everyday I'm guzzling 😎."
+        waterRelatedText.append(message)
+        
+        # 10
+        message = "psst. how's your water drinking going? 🐙"
+        waterRelatedText.append(message)
+        
+        # 11
+        message = "No you aren't hungry you are dehydrated 🦆! Drink {water_left} more glasses!".format(
+            water_left=self.water_left
+        )
+        waterRelatedText.append(message)
+        
+        # 12
+        message = "I look this good because I drink water. 🐧"
+        waterRelatedText.append(message)
+        
+        # 13
+        message = "Stressed 😓? Take a shot of water. 🐶"
+        waterRelatedText.append(message)
+            
+        # 14
+        message = "1 minute until this event: Drink glass # {water_left} of water. 🙆🏻".format(
+            water_left=self.water_left
+        )
+        waterRelatedText.append(message)
+        
+        # 15
+        message = "If you drink a gallon of water everday, you won't have time for other people's drama because you'll be too busy peeing. 👆🏻"
         waterRelatedText.append(message)
 
         # Final Message
